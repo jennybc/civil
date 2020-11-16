@@ -96,6 +96,10 @@ civil_set_install <- function(path) {
   invisible(.Call("_civil_civil_set_install", path, PACKAGE = "civil"))
 }
 
+fn <- function() {
+  .Call("_civil_fn", PACKAGE = "civil")
+}
+
 zone_standardize <- function(zone) {
   .Call("_civil_zone_standardize", zone, PACKAGE = "civil")
 }
